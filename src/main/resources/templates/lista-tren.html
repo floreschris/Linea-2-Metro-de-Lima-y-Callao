@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta name="description" content="" />
+<meta name="author" content="" />
+<title>Lista-Tren</title>
+<link href="css/estilos.css" rel="stylesheet" />
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"
+	crossorigin="anonymous"></script>
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+	crossorigin="anonymous">
+	<link rel="icon" href="images/imgLogo.png" />
+	
+</head>
+<body>
+	<nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+		<!-- Navbar Brand-->
+		<a class="navbar-brand ps-3" th:href="@{admin}">Formulario de
+			Tarjetas</a>
+		<!-- Sidebar Toggle-->
+		<button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0"
+			id="sidebarToggle" href="#!">
+			<i class="fas fa-bars"></i>
+		</button>
+		<!-- Navbar Search-->
+		<form
+			class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
+			<div class="input-group">
+				<input class="form-control" type="text" placeholder="Buscar..."
+					aria-label="Buscar..." aria-describedby="btnNavbarSearch" />
+				<button class="btn btn-primary" id="btnNavbarSearch" type="button">
+					<i class="fas fa-search"></i>
+				</button>
+			</div>
+		</form>
+		<!-- Navbar-->
+		<ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
+			<li class="nav-item dropdown"><a
+				class="nav-link dropdown-toggle" id="navbarDropdown" href="#"
+				role="button" data-bs-toggle="dropdown" aria-expanded="false"><i
+					class="fas fa-user fa-fw"></i></a>
+				<ul class="dropdown-menu dropdown-menu-end"
+					aria-labelledby="navbarDropdown">
+					<li><a class="dropdown-item" th:href="@{linea}">Settings</a></li>
+					<li><a class="dropdown-item" th:href="@{linea}">Activity
+							Log</a></li>
+					<li><hr class="dropdown-divider" /></li>
+					<li><a class="dropdown-item" th:href="@{linea}">Logout</a></li>
+				</ul></li>
+		</ul>
+	</nav>
+	<div id="layoutSidenav">
+		<div id="layoutSidenav_nav">
+			<nav class="sb-sidenav accordion sb-sidenav-dark"
+				id="sidenavAccordion">
+				<div class="sb-sidenav-menu">
+					<div class="nav">
+						<div class="sb-sidenav-menu-heading">Control</div>
+						<a class="nav-link" th:href="@{admin}">
+							<div class="sb-nav-link-icon">
+								<i class="fas fa-tachometer-alt"></i>
+							</div> Administrator
+						</a>
+						<div class="sb-sidenav-menu-heading">Formulario</div>
+						<a class="nav-link collapsed" href="#" data-bs-toggle="collapse"
+							data-bs-target="#collapseLayouts" aria-expanded="false"
+							aria-controls="collapseLayouts">
+							<div class="sb-nav-link-icon">
+								<i class="fas fa-columns"></i>
+							</div> Formularios
+							<div class="sb-sidenav-collapse-arrow">
+								<i class="fas fa-angle-down"></i>
+							</div>
+						</a>
+						<div class="collapse" id="collapseLayouts"
+							aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+							<nav class="sb-sidenav-menu-nested nav">
+								<a class="nav-link" th:href="@{/lista-persona}">Persona</a> <a
+									class="nav-link" th:href="@{/lista-tarjeta}">Tarjeta</a> <a
+									class="nav-link" th:href="@{/lista-estaciones}">Estacion</a> <a
+									class="nav-link" th:href="@{/lista-trayecto}">Trayecto</a>
+							</nav>
+						</div>
+			</nav>
+		</div>
+		<div id="layoutSidenav_content">
+			<div class="container col-sm-10 mt-4">
+				<div class="card">
+					<div class="card-body">
+						<a th:href="@{/nuevo-tren}" class="btn btn-primary">Nuevo</a>
+					</div>
+				</div>
+				<h4 class="text-center">Lista de Tren</h4>
+				<div class="card">
+					<div class="card-body">
+						<table class="table table-hover">
+							<thead>
+								<tr>
+									<th class="text-center">ID</th>
+									<th class="text-center">Numero Vagones</th>
+									<th class="text-center">Numero Asientos</th>
+									<th class="text-center">Capacidad</th>
+									<th class="text-center">Color</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr class="text-center" th:each="tren:${trenes}">
+									<td th:text="${tren.id_Tren}"></td>
+									<td th:text="${tren.nro_Vagones}"></td>
+									<td th:text="${tren.nro_Asientos}"></td>
+									<td th:text="${tren.capacidad}"></td>
+									<td th:text="${tren.color}"></td>
+									<td><a th:href="@{/editar-tren/}+${tren.id_Tren}"
+										class="btn btn-warning">Editar</a>  <a
+										th:href="@{/eliminar-tren/}+${tren.id_Tren}"
+										class="btn btn-danger">Eliminar</a>
+										</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+			crossorigin="anonymous"></script>
+		<script src="js/main.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+		<script src="https://code.jquery.com/jquery-3.7.1.js"
+			integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+			crossorigin="anonymous"></script>
+		<script src="js/funciones.js"></script>
+</body>
+</html>

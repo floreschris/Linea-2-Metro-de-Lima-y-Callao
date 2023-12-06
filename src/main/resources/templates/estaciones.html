@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- SEO Meta Tags -->
+<meta name="description" content="Your description">
+<meta name="author" content="Your name">
+
+<!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
+<meta property="og:site_name" content="" />
+<!-- website name -->
+<meta property="og:site" content="" />
+<!-- website link -->
+<meta property="og:title" content="" />
+<!-- title shown in the actual shared post -->
+<meta property="og:description" content="" />
+<!-- description shown in the actual shared post -->
+<meta property="og:image" content="" />
+<!-- image link, make sure it's jpg -->
+<meta property="og:url" content="" />
+<!-- where do you want your post to link to -->
+<meta name="twitter:card" content="summary_large_image">
+<!-- to have large image post format in Twitter -->
+
+<!-- Webpage Title -->
+<title>Estaciones - Linea 2</title>
+
+<!-- Styles -->
+<link
+	href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap"
+	rel="stylesheet">
+<link href="Css/bootstrap.min.css" rel="stylesheet">
+<link href="Css/fontawesome-all.min.css" rel="stylesheet">
+<link href="Css/swiper.css" rel="stylesheet">
+<link href="Css/styles.css" rel="stylesheet">
+
+<!-- Favicon  -->
+<link rel="icon" href="images/imgLogo.png" />
+</head>
+<body>
+
+	<!-- Navigation -->
+	<nav id="navbarExample"
+		class="navbar navbar-expand-lg fixed-top navbar-light"
+		aria-label="Main navigation">
+		<div class="container">
+
+			<!-- Image Logo -->
+			<a class="navbar-brand logo-image" href="index.html"><img
+				src="images/LineaLogo.png" alt="alternative" /></a>
+
+
+
+			<button class="navbar-toggler p-0 border-0" type="button"
+				id="navbarSideCollapse" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="navbar-collapse offcanvas-collapse"
+				id="navbarsExampleDefault">
+				<ul class="navbar-nav ms-auto navbar-nav-scroll">
+					<li class="nav-item"><a class="nav-link active"
+						aria-current="page" th:href="@{linea}">Inicio</a></li>
+					<li class="nav-item"><a class="nav-link" th:href="@{linea}">Sobre
+							nosotros</a></li>
+					<li class="nav-item"><a class="nav-link" th:href="@{linea}">Servicios</a>
+					</li>
+					<li class="nav-item"><a class="nav-link"
+						th:href="@{linea#pricing}">Tarifas</a></li>
+
+				</ul>
+				<span class="nav-item"> <a class="btn-outline-sm"
+					th:href="@{/login}">Log in</a>
+				</span>
+			</div>
+			<!-- end of navbar-collapse -->
+		</div>
+		<!-- end of container -->
+	</nav>
+	<!-- end of navbar -->
+	<!-- end of navigation -->
+
+
+	<!-- Header -->
+	<header class="ex-header">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-10 offset-xl-1">
+					<h1>Detalle de estaciones</h1>
+				</div>
+				<!-- end of col -->
+			</div>
+			<!-- end of row -->
+		</div>
+		<!-- end of container -->
+	</header>
+	<!-- end of ex-header -->
+	<!-- end of header -->
+
+
+	<!-- Basic -->
+	<div class="ex-basic-1 pt-5 pb-5">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<img class="img-fluid mt-5 mb-3" src="images/ImgEstaciones.png"
+						alt="alternative">
+				</div>
+				<!-- end of col -->
+			</div>
+			<!-- end of row -->
+		</div>
+		<!-- end of container -->
+	</div>
+	<!-- end of ex-basic-1 -->
+	<!-- end of basic -->
+
+
+	<!-- Basic -->
+	<div class="ex-basic-1 pt-4">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-10 offset-xl-1">
+					<p>Con la finalidad de concretar este anuncio, el gobierno
+						encargó la implementación del proyecto a la agencia estatal
+						Proinversión, la que preparó los estudios de factibilidad y el
+						expediente técnico, en coordinación con el Ministerio de
+						Transportes y Comunicaciones, para la posterior convocatoria a una
+						licitación internacional que entregara el proyecto en concesión a
+						inversionistas privados.</p>
+					<p class="mb-5">Bienvenidos a la Línea 2 del Metro de Lima y
+						Callao, una red de transporte eficiente que conecta
+						estratégicamente diversas zonas para ofrecerte un viaje rápido y
+						cómodo.</p>
+
+					<h2 class="mb-3">A continuación, te presentamos algunas de
+						nuestras principales estaciones:</h2>
+					<br>
+					<br>
+
+				</div>
+				<!-- end of col -->
+			</div>
+			<!-- end of row -->
+		</div>
+		<!-- end of container -->
+	</div>
+	<!-- end of ex-basic-1 -->
+	<!-- end of basic -->
+
+
+
+	<!-- Cards -->
+	<div class="ex-cards-1 pt-3 pb-3">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+
+					<!-- Card -->
+					<div class="card">
+						<ul class="list-unstyled">
+							<li class="d-flex"><span class="fa-stack"> <span
+									class="fas fa-circle fa-stack-2x"></span> <span
+									class="fa-stack-1x">1</span>
+							</span>
+								<div class="flex-grow-1">
+									<h5>Puerto del Callao:</h5>
+									<p>Ubicación: Av. Guardia Chalaca con Jr. Zepita</p>
+									<p>Distrito: Callao</p>
+									<p>Tipo de Estacion: Subterránea</p>
+								</div></li>
+						</ul>
+					</div>
+					<!-- end of card -->
+					<!-- end of card -->
+
+					<!-- Card -->
+					<div class="card">
+						<ul class="list-unstyled">
+							<li class="d-flex"><span class="fa-stack"> <span
+									class="fas fa-circle fa-stack-2x"></span> <span
+									class="fa-stack-1x">2</span>
+							</span>
+								<div class="flex-grow-1">
+									<h5>Buenos Aires</h5>
+									<p>Ubicación: Av. Óscar R. Benavides con Av. Buenos Aires</p>
+									<p>Distrito: Callao y Bellavista</p>
+									<p>Tipo de Estacion: Subterránea</p>
+								</div></li>
+						</ul>
+					</div>
+					<!-- end of card -->
+					<!-- end of card -->
+
+					<!-- Card -->
+					<div class="card">
+						<ul class="list-unstyled">
+							<li class="d-flex"><span class="fa-stack"> <span
+									class="fas fa-circle fa-stack-2x"></span> <span
+									class="fa-stack-1x">3</span>
+							</span>
+								<div class="flex-grow-1">
+									<h5>Juan Pablo ll:</h5>
+									<p>Ubicación: Av. Óscar R. Benavides con Av. Juan Pablo II</p>
+									<p>Distrito: Callao y Bellavista</p>
+									<p>Tipo de Estacion: Subterránea</p>
+								</div></li>
+						</ul>
+					</div>
+					<!-- end of card -->
+					<!-- end of card -->
+
+					<!-- Card -->
+					<div class="card">
+						<ul class="list-unstyled">
+							<li class="d-flex"><span class="fa-stack"> <span
+									class="fas fa-circle fa-stack-2x"></span> <span
+									class="fa-stack-1x">4</span>
+							</span>
+								<div class="flex-grow-1">
+									<h5>Insurgentes</h5>
+									<p>Ubicación: Av. Óscar R. Benavides con Av. Insurgentes</p>
+									<p>Distrito: Callao y Bellavista</p>
+									<p>Tipo de Estacion: Subterránea</p>
+								</div></li>
+						</ul>
+					</div>
+					<!-- end of card -->
+					<!-- end of card -->
+					<!-- Card -->
+					<div class="card">
+						<ul class="list-unstyled">
+							<li class="d-flex"><span class="fa-stack"> <span
+									class="fas fa-circle fa-stack-2x"></span> <span
+									class="fa-stack-1x">5</span>
+							</span>
+								<div class="flex-grow-1">
+									<h5>Carmen de La Legua</h5>
+									<p>Ubicación: Av. Óscar R. Benavides con Av. Elmer Faucett</p>
+									<p>Distrito: Callao y Bellavista</p>
+									<p>Tipo de Estacion: Subterránea</p>
+								</div></li>
+						</ul>
+					</div>
+					<!-- end of card -->
+					<!-- end of card -->
+					<!-- Card -->
+					<div class="card">
+						<ul class="list-unstyled">
+							<li class="d-flex"><span class="fa-stack"> <span
+									class="fas fa-circle fa-stack-2x"></span> <span
+									class="fa-stack-1x">6</span>
+							</span>
+								<div class="flex-grow-1">
+									<h5>Óscar R. Benavides</h5>
+									<p>Ubicación: Av. Óscar R. Benavides con Jr. Santos Chocano</p>
+									<p>Distrito: Callao y Bellavista</p>
+									<p>Tipo de Estacion: Subterránea</p>
+								</div></li>
+						</ul>
+					</div>
+					<!-- end of card -->
+					<!-- end of card -->
+					<!-- Card -->
+					<div class="card">
+						<ul class="list-unstyled">
+							<li class="d-flex"><span class="fa-stack"> <span
+									class="fas fa-circle fa-stack-2x"></span> <span
+									class="fa-stack-1x">7</span>
+							</span>
+								<div class="flex-grow-1">
+									<h5>San Marcos</h5>
+									<p>Ubicación: Av. Amézaga con Av. Herrera</p>
+									<p>Distrito: Lima</p>
+									<p>Tipo de Estacion: Subterránea</p>
+								</div></li>
+						</ul>
+					</div>
+					<!-- end of card -->
+					<!-- end of card -->
+					<!-- Card -->
+					<div class="card">
+						<ul class="list-unstyled">
+							<li class="d-flex"><span class="fa-stack"> <span
+									class="fas fa-circle fa-stack-2x"></span> <span
+									class="fa-stack-1x">8</span>
+							</span>
+								<div class="flex-grow-1">
+									<h5>Elio</h5>
+									<p>Ubicación: Av. Venezuela con Av. García y García</p>
+									<p>Distrito: Lima</p>
+									<p>Tipo de Estacion: Subterránea</p>
+								</div></li>
+						</ul>
+					</div>
+					<!-- end of card -->
+					<!-- end of card -->
+
+					<!-- Card -->
+					<div class="card">
+						<ul class="list-unstyled">
+							<li class="d-flex"><span class="fa-stack"> <span
+									class="fas fa-circle fa-stack-2x"></span> <span
+									class="fa-stack-1x">9</span>
+							</span>
+								<div class="flex-grow-1">
+									<h5>La Alborada</h5>
+									<p>Ubicación: Av. Venezuela con Av. La Alborada</p>
+									<p>Distrito: Lima</p>
+									<p>Tipo de Estacion: Subterránea</p>
+								</div></li>
+						</ul>
+					</div>
+					<!-- end of card -->
+					<!-- end of card -->
+					<!-- Card -->
+					<div class="card">
+						<ul class="list-unstyled">
+							<li class="d-flex"><span class="fa-stack"> <span
+									class="fas fa-circle fa-stack-2x"></span> <span
+									class="fa-stack-1x">10</span>
+							</span>
+								<div class="flex-grow-1">
+									<h5>Tingo María</h5>
+									<p>Ubicación: Av. Venezuela con Av. Tingo María</p>
+									<p>Distrito: Lima</p>
+									<p>Tipo de Estacion: Subterránea</p>
+								</div></li>
+						</ul>
+					</div>
+					<!-- end of card -->
+					<!-- end of card -->
+					<!-- Card -->
+					<div class="card">
+						<ul class="list-unstyled">
+							<li class="d-flex"><span class="fa-stack"> <span
+									class="fas fa-circle fa-stack-2x"></span> <span
+									class="fa-stack-1x">11</span>
+							</span>
+								<div class="flex-grow-1">
+									<h5>Parque Murillo</h5>
+									<p>Ubicación: Av. Arica con Av. Aguarico</p>
+									<p>Distrito: Breña</p>
+									<p>Tipo de Estacion: Subterránea</p>
+								</div></li>
+						</ul>
+					</div>
+					<!-- end of card -->
+					<!-- end of card -->
+
+					<!-- Card -->
+					<div class="card">
+						<ul class="list-unstyled">
+							<li class="d-flex"><span class="fa-stack"> <span
+									class="fas fa-circle fa-stack-2x"></span> <span
+									class="fa-stack-1x">12</span>
+							</span>
+								<div class="flex-grow-1">
+									<h5>Plaza Bolognesi</h5>
+									<p>Ubicación: Av. Arica con Jr. Iquique</p>
+									<p>Distrito: Breña</p>
+									<p>Tipo de Estacion: Subterránea</p>
+								</div></li>
+						</ul>
+					</div>
+					<!-- end of card -->
+					<!-- end of card -->
+
+					<!-- Card -->
+					<div class="card">
+						<ul class="list-unstyled">
+							<li class="d-flex"><span class="fa-stack"> <span
+									class="fas fa-circle fa-stack-2x"></span> <span
+									class="fa-stack-1x">13</span>
+							</span>
+								<div class="flex-grow-1">
+									<h5>Estación Central</h5>
+									<p>Ubicación: Av. 9 de diciembre con Av. Garcilaso de la
+										Vega</p>
+									<p>Distrito: Lima</p>
+									<p>Tipo de Estacion: Subterránea</p>
+								</div></li>
+						</ul>
+					</div>
+					<!-- end of card -->
+					<!-- end of card -->
+
+					<!-- Card -->
+					<div class="card">
+						<ul class="list-unstyled">
+							<li class="d-flex"><span class="fa-stack"> <span
+									class="fas fa-circle fa-stack-2x"></span> <span
+									class="fa-stack-1x">14</span>
+							</span>
+								<div class="flex-grow-1">
+									<h5>Plaza Manco Cápac</h5>
+									<p>Ubicación: Av. 28 de Julio con Av. Manco Cápac</p>
+									<p>Distrito: La Victoria</p>
+									<p>Tipo de Estacion: Subterránea</p>
+								</div></li>
+						</ul>
+					</div>
+					<!-- end of card -->
+					<!-- end of card -->
+
+					<!-- Card -->
+					<div class="card">
+						<ul class="list-unstyled">
+							<li class="d-flex"><span class="fa-stack"> <span
+									class="fas fa-circle fa-stack-2x"></span> <span
+									class="fa-stack-1x">15</span>
+							</span>
+								<div class="flex-grow-1">
+									<h5>Cangallo</h5>
+									<p>Ubicación: Av. 28 de Julio con Jr. Cangallo</p>
+									<p>Distrito: La Victoria</p>
+									<p>Tipo de Estacion: Subterránea</p>
+								</div></li>
+						</ul>
+					</div>
+					<!-- end of card -->
+					<!-- end of card -->
+
+					<!-- Card -->
+					<div class="card">
+						<ul class="list-unstyled">
+							<li class="d-flex"><span class="fa-stack"> <span
+									class="fas fa-circle fa-stack-2x"></span> <span
+									class="fa-stack-1x">16</span>
+							</span>
+								<div class="flex-grow-1">
+									<h5>28 de Julio</h5>
+									<p>Ubicación: Av. 28 de Julio con Av. Aviación</p>
+									<p>Distrito: Lima y La Victoria</p>
+									<p>Tipo de Estacion: Subterránea</p>
+								</div></li>
+						</ul>
+					</div>
+					<!-- end of card -->
+					<!-- end of card -->
+
+					<!-- Card -->
+					<div class="card">
+						<ul class="list-unstyled">
+							<li class="d-flex"><span class="fa-stack"> <span
+									class="fas fa-circle fa-stack-2x"></span> <span
+									class="fa-stack-1x">17</span>
+							</span>
+								<div class="flex-grow-1">
+									<h5>Nicolás Ayllón</h5>
+									<p>Ubicación: Av. Nicolás de Ayllón con Parque San Cosme</p>
+									<p>Distrito: La Victoria y El Agustino</p>
+									<p>Tipo de Estacion: Subterránea</p>
+								</div></li>
+						</ul>
+					</div>
+					<!-- end of card -->
+					<!-- end of card -->
+
+					<!-- Card -->
+					<div class="card">
+						<ul class="list-unstyled">
+							<li class="d-flex"><span class="fa-stack"> <span
+									class="fas fa-circle fa-stack-2x"></span> <span
+									class="fa-stack-1x">18</span>
+							</span>
+								<div class="flex-grow-1">
+									<h5>Circunvalación</h5>
+									<p>Ubicación: Av. Nicolás de Ayllón con Av. Circunvalación</p>
+									<p>Distrito: San Luis</p>
+									<p>Tipo de Estacion: Subterránea</p>
+								</div></li>
+						</ul>
+					</div>
+					<!-- end of card -->
+					<!-- end of card -->
+					<!-- Card -->
+					<div class="card">
+						<ul class="list-unstyled">
+							<li class="d-flex"><span class="fa-stack"> <span
+									class="fas fa-circle fa-stack-2x"></span> <span
+									class="fa-stack-1x">19</span>
+							</span>
+								<div class="flex-grow-1">
+									<h5>San Juan de Dios</h5>
+									<p>Ubicación: Av. Nicolás de Ayllón con Av. Nicolás Arriola</p>
+									<p>Distrito: Ate y San Luis</p>
+									<p>Tipo de Estacion: Subterránea</p>
+								</div></li>
+						</ul>
+					</div>
+					<!-- end of card -->
+					<!-- end of card -->
+
+					<!-- Card -->
+					<div class="card">
+						<ul class="list-unstyled">
+							<li class="d-flex"><span class="fa-stack"> <span
+									class="fas fa-circle fa-stack-2x"></span> <span
+									class="fa-stack-1x">20</span>
+							</span>
+								<div class="flex-grow-1">
+									<h5>Evitamiento</h5>
+									<p>Ubicación: Av. Nicolás de Ayllón con Vía de Evitamiento</p>
+									<p>Distrito: Ate y Santa Anita</p>
+									<p>Tipo de Estacion: Subterránea</p>
+								</div></li>
+						</ul>
+					</div>
+					<!-- end of card -->
+					<!-- end of card -->
+					<!-- Card -->
+					<div class="card">
+						<ul class="list-unstyled">
+							<li class="d-flex"><span class="fa-stack"> <span
+									class="fas fa-circle fa-stack-2x"></span> <span
+									class="fa-stack-1x">21</span>
+							</span>
+								<div class="flex-grow-1">
+									<h5>Óvalo Santa Anita</h5>
+									<p>Ubicación: Av. Nicolás de Ayllón con Av. La Molina</p>
+									<p>Distrito: Ate y Santa Anita</p>
+									<p>Tipo de Estacion: Subterránea</p>
+								</div></li>
+						</ul>
+					</div>
+					<!-- end of card -->
+					<!-- end of card -->
+
+					<!-- Card -->
+					<div class="card">
+						<ul class="list-unstyled">
+							<li class="d-flex"><span class="fa-stack"> <span
+									class="fas fa-circle fa-stack-2x"></span> <span
+									class="fa-stack-1x">22</span>
+							</span>
+								<div class="flex-grow-1">
+									<h5>Colectora Industrial</h5>
+									<p>Ubicación: Av. Nicolás de Ayllón con Av. Colectora
+										Industria</p>
+									<p>Distrito: Ate y Santa Anita</p>
+									<p>Tipo de Estacion: Subterránea</p>
+								</div></li>
+						</ul>
+					</div>
+					<!-- end of card -->
+					<!-- end of card -->
+
+					<!-- Card -->
+					<div class="card">
+						<ul class="list-unstyled">
+							<li class="d-flex"><span class="fa-stack"> <span
+									class="fas fa-circle fa-stack-2x"></span> <span
+									class="fa-stack-1x">23</span>
+							</span>
+								<div class="flex-grow-1">
+									<h5>Hermilio Valdizán</h5>
+									<p>Ubicación: Av. Nicolás de Ayllón con Hospital Hermilio
+										Valdizán</p>
+									<p>Distrito: Ate y Santa Anita</p>
+									<p>Tipo de Estacion: Subterránea</p>
+								</div></li>
+						</ul>
+					</div>
+					<!-- end of card -->
+					<!-- end of card -->
+
+					<!-- Card -->
+					<div class="card">
+						<ul class="list-unstyled">
+							<li class="d-flex"><span class="fa-stack"> <span
+									class="fas fa-circle fa-stack-2x"></span> <span
+									class="fa-stack-1x">24</span>
+							</span>
+								<div class="flex-grow-1">
+									<h5>Mercado Santa Anita</h5>
+									<p>Ubicación: Av. Nicolás de Ayllón con Av. 22 de Julio</p>
+									<p>Distrito: Ate y Santa Anita</p>
+									<p>Tipo de Estacion: Subterránea</p>
+								</div></li>
+						</ul>
+					</div>
+					<!-- end of card -->
+					<!-- end of card -->
+
+					<!-- Card -->
+					<div class="card">
+						<ul class="list-unstyled">
+							<li class="d-flex"><span class="fa-stack"> <span
+									class="fas fa-circle fa-stack-2x"></span> <span
+									class="fa-stack-1x">25</span>
+							</span>
+								<div class="flex-grow-1">
+									<h5>Vista Alegre</h5>
+									<p>Ubicación: Av. Nicolás de Ayllón con Av. Río Perené</p>
+									<p>Distrito: Ate</p>
+									<p>Tipo de Estacion: Subterránea</p>
+								</div></li>
+						</ul>
+					</div>
+					<!-- end of card -->
+					<!-- end of card -->
+
+					<!-- Card -->
+					<div class="card">
+						<ul class="list-unstyled">
+							<li class="d-flex"><span class="fa-stack"> <span
+									class="fas fa-circle fa-stack-2x"></span> <span
+									class="fa-stack-1x">26</span>
+							</span>
+								<div class="flex-grow-1">
+									<h5>Prolongación Javier Prado</h5>
+									<p>Ubicación: Av. Nicolás de Ayllón con Av. Javier Prado</p>
+									<p>Distrito: Ate</p>
+									<p>Tipo de Estacion: Subterránea</p>
+								</div></li>
+						</ul>
+					</div>
+					<!-- end of card -->
+					<!-- end of card -->
+
+					<!-- Card -->
+					<div class="card">
+						<ul class="list-unstyled">
+							<li class="d-flex"><span class="fa-stack"> <span
+									class="fas fa-circle fa-stack-2x"></span> <span
+									class="fa-stack-1x">27</span>
+							</span>
+								<div class="flex-grow-1">
+									<h5>Municipalidad de Ate</h5>
+									<p>Ubicación: Av. Nicolás de Ayllón con Ca. Perú</p>
+									<p>Distrito: Ate</p>
+									<p>Tipo de Estacion: Subterránea</p>
+								</div></li>
+						</ul>
+					</div>
+					<!-- end of card -->
+					<!-- end of card -->
+
+
+
+				</div>
+				<!-- end of col -->
+			</div>
+			<!-- end of row -->
+		</div>
+		<!-- end of container -->
+	</div>
+	<!-- end of ex-cards-1 -->
+	<!-- end of cards -->
+
+
+	<!-- Footer -->
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="footer-col first">
+						<h6>Acerca del sitio web</h6>
+						<p class="p-small">Únete a nuestra comunidad en redes sociales
+							para estar al tanto de noticias, eventos y promociones
+							exclusivas. ¡Síguenos para ser parte de la conversación!</p>
+					</div>
+					<!-- end of footer-col -->
+					<div class="footer-col second">
+						<h6>OFICINA DE ATENCIÓN AL PASAJERO</h6>
+						<ul class="list-unstyled li-space-lg p-small">
+							<li>Oficina Informativa: Av.Nicolás Ayllon 2018 Ate Vitarte
+							</li>
+							<li>Oficina Administrativa: Av. Víctor Andrés Belaúnde 332 -
+								San Isidro</a>
+							</li>
+							<li>Email: <a
+								href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=consultas@ccmetrolima.com">consultas@ccmetrolima.com</a>
+							</li>
+						</ul>
+					</div>
+					<!-- end of footer-col -->
+					<div class="footer-col third">
+						<span class="fa-stack"> <a
+							href="https://www.facebook.com/linea2metrolima"> <i
+								class="fas fa-circle fa-stack-2x"></i> <i
+								class="fab fa-facebook-f fa-stack-1x"></i>
+						</a>
+						</span> <span class="fa-stack"> <a
+							href="https://twitter.com/metronewslmc?lang=es"> <i
+								class="fas fa-circle fa-stack-2x"></i> <i
+								class="fab fa-twitter fa-stack-1x"></i>
+						</a>
+						</span> <span class="fa-stack"> <a
+							href="https://api.whatsapp.com/send?phone=80044004"> <i
+								class="fas fa-circle fa-stack-2x"></i> <i
+								class="fab fa-whatsapp fa-stack-1x"></i>
+						</a>
+						</span> <span class="fa-stack"> <a
+							href="https://www.instagram.com/metrodelima.l2/"> <i
+								class="fas fa-circle fa-stack-2x"></i> <i
+								class="fab fa-instagram fa-stack-1x"></i>
+						</a>
+						</span>
+						<p class="p-small">
+							Centro de Atención Telefónica <a
+								href="https://api.whatsapp.com/send?phone=80044004"><strong>
+									<br> +51 800 44004
+							</strong></a>
+						</p>
+					</div>
+					<!-- end of footer-col -->
+				</div>
+				<!-- end of col -->
+			</div>
+			<!-- end of row -->
+		</div>
+		<!-- end of container -->
+	</div>
+	<!-- end of footer -->
+	<!-- end of footer -->
+
+	<!-- Copyright -->
+	<div class="copyright">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<p class="p-small">
+						Copyright © Línea 2 - Todos los derechos reservados</a>
+					</p>
+				</div>
+				<!-- end of col -->
+
+				<div class="col-lg-6">
+					<p class="p-small">
+						Creador <a
+							href="https://www.facebook.com/profile.php?id=100095125706263">
+							FloWired</a>
+					</p>
+				</div>
+				<!-- end of col -->
+			</div>
+			<!-- enf of row -->
+		</div>
+		<!-- end of container -->
+	</div>
+	<!-- end of copyright -->
+	<!-- end of copyright -->
+
+
+	<!-- Back To Top Button -->
+	<button onclick="topFunction()" id="myBtn">
+		<img src="images/up-arrow.png" alt="alternative">
+	</button>
+	<!-- end of back to top button -->
+
+	<!-- Scripts -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Bootstrap framework -->
+	<script src="js/swiper.min.js"></script>
+	<!-- Swiper for image and text sliders -->
+	<script src="js/purecounter.min.js"></script>
+	<!-- Purecounter counter for statistics numbers -->
+	<script src="js/replaceme.min.js"></script>
+	<!-- ReplaceMe for rotating text -->
+	<script src="js/scripts.js"></script>
+	<!-- Custom scripts -->
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Error Linea 2</title>
+
+<link rel="stylesheet" href="css/lgCss.css">
+
+<link rel="icon" href="images/imgLogo.png" />
+
+</head>
+<body>
+
+
+	<div class="form">
+		<form method="post" action="/login" th:object="${loginRequest}">
+			<h2>Atencion</h2>
+
+			<div class="input-box">
+				<h1 class="text-white">
+					Tu usuario es incorrecto en la base de datos, Porfavor reintente
+					otra vez o registrese <span th:text=${userLogin}></span>
+				</h1>
+			</div>
+			<div class="input-box">
+				<a href="/registro">Registrate</a> <br> <a href="/login">Login</a>
+				<br> <a href="/linea">Metro de Lima Linea 2</a>
+			</div>
+
+
+		</form>
+	</div>
+
+</body>
+</html>
